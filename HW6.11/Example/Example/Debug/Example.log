@@ -1,0 +1,9 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Output 目錄。
+D:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中繼目錄 (Debug\) 包含從其他專案 (Example.vcxproj) 共用的檔案。這可能導致錯誤的清除和重建行為。
+  main.c
+d:\data\desktop\github\hw_1116\hw6.11\source\main.c(36): warning C4047: '函式': 'void **' 與 'int *' 間接取值的層級不同
+d:\data\desktop\github\hw_1116\hw6.11\source\main.c(36): warning C4022: 'xch': 指標與實質參數 1 不相符
+d:\data\desktop\github\hw_1116\hw6.11\source\main.c(36): warning C4022: 'xch': 指標與實質參數 2 不相符
+d:\data\desktop\github\hw_1116\hw6.11\source\main.c(54): warning C4047: '=': 'int' 與 'void *' 間接取值的層級不同
+d:\data\desktop\github\hw_1116\hw6.11\source\main.c(56): warning C4047: '=': 'void *' 與 'int' 間接取值的層級不同
+  Example.vcxproj -> D:\Data\Desktop\Github\HW_1116\HW6.11\Example\Example\..\..\temp\debug\HW6.11.exe
