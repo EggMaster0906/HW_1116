@@ -1,21 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SIZE 7
+#define SIZE 10
 
 void xch(void* *a, void* *b);
 
 int main(void)
 {
-	printf("Enter %d integers: \n",SIZE);
 	int list[SIZE];
-
+	int sortNum;
+	srand(time(NULL));
+	
+	printf("Sort these number: ");
 	for (int i = 0; i < SIZE; i++)
 	{
-		scanf("%d", &list[i]);
+		list[i] = rand() % 500;
+		printf("%d ", list[i]);
 	}
 
-	printf("\n");
+	printf("\nArrange numbers from (1)large to small or (2)small to large?(Enter 1 or 2)");
+	scanf("%d", &sortNum);
+
 	
 	for (int a = 0; a < SIZE; a++)
 	{
@@ -30,7 +35,7 @@ int main(void)
 				if (j == i)
 					printf("\b] ");
 			}
-			if (list[i] > list[i - 1])
+			if ((sortNum == 1&&list[i] > list[i - 1]) || (sortNum == 2 && list[i] < list[i - 1]))
 			{
 				printf("    (Swap %d %d)", list[i], list[i - 1]);
 				xch(&list[i], &list[i - 1]);
